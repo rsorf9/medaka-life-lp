@@ -616,4 +616,20 @@ h1 {
     width: 34px;
     height: 34px;
   }
+
+  .photo-band {
+    min-height: 420px;
+    place-items: end center;
+  }
+
+  .photo-band img {
+    object-fit: contain;
+    background: #eef1e9;
+  }
+
+  .photo-band div {
+    width: calc(100% - 40px);
+    max-width: none;
+    margin: 0 20px 22px;
+  }
 }
