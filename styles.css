@@ -554,6 +554,7 @@ h1 {
 .ecology-map figcaption {
   margin: 0;
   padding: 16px clamp(28px, 5vw, 56px) 22px;
+  background: var(--white);
   color: var(--muted);
   font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
   font-size: 14px;
