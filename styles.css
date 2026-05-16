@@ -109,19 +109,25 @@ a {
 }
 
 .nav a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: nowrap;
   color: var(--white);
   text-decoration: none;
-  font-size: clamp(22px, 2.5vw, 34px);
+  font-size: clamp(22px, 2.3vw, 34px);
   font-weight: 700;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.24);
+  white-space: nowrap;
 }
 
 .nav span {
-  display: inline-block;
-  margin-left: 5px;
+  display: inline;
+  margin-left: 0;
   font-size: 13px;
   font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .download-card {
