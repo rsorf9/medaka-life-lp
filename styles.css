@@ -479,6 +479,28 @@ h1 {
   gap: 18px;
 }
 
+.ecology-map {
+  margin: 34px 0 0;
+}
+
+.ecology-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 48, 47, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.ecology-map figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
 .movie {
   background: #eef1e5;
 }
