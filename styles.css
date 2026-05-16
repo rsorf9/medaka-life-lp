@@ -247,7 +247,7 @@ h1 {
   display: grid;
   grid-template-columns: 44px 1fr;
   gap: clamp(24px, 4vw, 36px);
-  min-height: 220px;
+  min-height: 310px;
   padding: clamp(46px, 7vw, 66px) clamp(32px, 5vw, 48px) clamp(54px, 7vw, 74px);
   background:
     linear-gradient(90deg, rgba(89, 125, 70, 0.12), transparent),
@@ -276,6 +276,64 @@ h1 {
   font: inherit;
   color: inherit;
   text-transform: none;
+}
+
+.topics {
+  grid-column: 2;
+  margin-top: clamp(38px, 6vw, 70px);
+  padding-top: 24px;
+  border-top: 1px solid rgba(34, 48, 47, 0.12);
+}
+
+.topics__head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.topics__head p {
+  margin: 0;
+  color: var(--water);
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.topics__head span {
+  color: var(--muted);
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.topics__list {
+  display: grid;
+  gap: 10px;
+}
+
+.topic-item {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.topic-item time {
+  color: var(--water);
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.topic-item p {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .section {
@@ -655,5 +713,19 @@ h1 {
     width: calc(100% - 40px);
     max-width: none;
     margin: 0 20px 22px;
+  }
+
+  .intro h2 {
+    white-space: normal;
+  }
+
+  .topics {
+    grid-column: 1 / -1;
+    margin-top: 34px;
+  }
+
+  .topic-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 }
