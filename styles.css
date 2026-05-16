@@ -480,20 +480,22 @@ h1 {
 }
 
 .ecology-map {
-  margin: 34px 0 0;
+  margin: 34px calc(clamp(28px, 5vw, 56px) * -1) 0;
+  background: #dff3f8;
 }
 
 .ecology-map img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: 1px solid rgba(34, 48, 47, 0.12);
-  box-shadow: var(--shadow);
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
 }
 
 .ecology-map figcaption {
-  margin-top: 14px;
+  margin: 0;
+  padding: 16px clamp(28px, 5vw, 56px) 22px;
   color: var(--muted);
   font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
   font-size: 14px;
