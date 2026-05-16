@@ -538,8 +538,9 @@ h1 {
 .right-copy-ja {
   margin: 14px 0 0;
   font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-  font-size: clamp(15px, 1.8vw, 22px);
+  font-size: clamp(14px, 1.45vw, 19px);
   font-weight: 800;
+  white-space: nowrap;
 }
 
 @media (max-width: 980px) {
