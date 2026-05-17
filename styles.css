@@ -166,10 +166,35 @@ a {
 }
 
 .content {
+  position: relative;
+  z-index: 2;
   min-height: 100vh;
   background: var(--paper);
   overflow: hidden;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
+  box-shadow:
+    -22px 0 44px rgba(6, 27, 25, 0.34),
+    22px 0 44px rgba(6, 27, 25, 0.34),
+    0 0 0 1px rgba(255, 253, 244, 0.22);
+}
+
+.content::before,
+.content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 1px;
+  pointer-events: none;
+  background: rgba(255, 253, 244, 0.34);
+}
+
+.content::before {
+  left: 0;
+}
+
+.content::after {
+  right: 0;
 }
 
 .panel {
